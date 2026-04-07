@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main() {
+    // Define the variables here
+    int age= 65;
+    int isMember= 0;
+    
+    // Create the boolean expression here
+    bool isEligible;
+
+    if(age >= 65 || isMember==1 ){
+        isEligible = 1;
+    }
+    
+    // Print the result
+    printf("Eligible for discount? %d\n", isEligible);
+    
+    return 0;
+}
