@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdbool.h>  
+
+int main() {
+    int first, second;
+    bool is_odd;
+    int remainder = first % second;
+    bool is_divisible;
+    // Get user input
+    scanf("%d", &first);
+    scanf("%d", &second);
+    
+    // Calculate and display results
+    printf("Remainder: %d", remainder);
+
+    if((first + second) % 2 != 0 ){is_odd = 1;}
+    else {is_odd = 0;}
+    printf("Sum is odd:%d", is_odd);
+
+    if(first % second != 0 ){is_divisible = 0;}
+    else {is_divisible = 1;}
+    printf("First is divisible by second: %d", is_divisible);
+
+    
+    return 0;
+}

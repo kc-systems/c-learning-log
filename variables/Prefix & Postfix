@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Write your code here
+    int number = 10;
+   
+    int prefixResult = ++number;
+    /* This is prefix cause its before so the 
+    result of prefixResult will be 11 cause 10 will
+    be incremented by 1 first */
+
+    int postfixResult = number++;
+    /* The opposite of prefix cause number will
+    be added first before being incremented by 1 */
+
+    printf("Number: %d\n", number);
+    printf("Prefix: %d\n", prefixResult);
+    printf("Postfix: %d", postfixResult); 
+    
+    
+    return 0;
+}
