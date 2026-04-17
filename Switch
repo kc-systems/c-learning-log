@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int grade;
+    scanf("%d", &grade);
+    // Don't change above this line
+    // In Switch you must be detailed about the numbers you use
+    // Write your code here
+    switch(grade / 10){
+        case 6:
+        printf("D\n");
+        break;
+        case 7:
+        printf("C\n");
+         break;
+        case 8:
+        printf("B\n");
+         break;
+        case 9:
+        printf("A\n");
+         break;
+        default:
+        printf("F"); 
+      
+    }
+    
+    return 0;
+}
