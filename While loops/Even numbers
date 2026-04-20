@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int num = n;
+     int num1 = 2;
+    int even_n = num1 % 2;
+    
+
+    while(num1 <= n ){
+        if(even_n == 0){
+            printf("%d ", num1);
+            num1 += 2;
+        }
+
+        
+
+    }
+    // Your code here
+    
+    return 0;
+}
