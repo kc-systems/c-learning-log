@@ -81,8 +81,8 @@ void insert(node_t * tree, int val)
 void printDFS(node_t * tree)
 {
   /* change the code here */
-  if (tree == NULL)         return;   /* security measure */
-  if (tree ->left != NULL)   printDFS(tree->left);
-  if (tree != NULL)         printf("%d ", tree->val);
-  if (tree ->right != NULL)  printDFS(tree->right);
+  if (tree == NULL)   return;   /* security measure */
+     printDFS(tree->left);
+           printf("%d ", tree->val);
+    printDFS(tree->right);
 }

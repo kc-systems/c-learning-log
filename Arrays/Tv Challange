@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    // Write code here
+    int size = 100;
+    int grid[size];
+    int width = 0, height = 0;
+    int n = 0;
+    
+
+    while(n < size){
+        scanf("%d ", &grid[n]);
+        if(grid[n - 1] == 3){
+            break;
+        }
+        n++;
+    }
+
+    for(int i = 0; i < n; i++){
+        if(grid[i] != 1){
+            break;
+        }
+        width = i;
+    }
+
+    height = n / width;
+   printf("%d %d", height, width);
+    
+
+   
+
+
+
+
+    return 0;
+};
